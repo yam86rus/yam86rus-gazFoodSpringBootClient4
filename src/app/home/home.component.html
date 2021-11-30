@@ -1,1 +1,13 @@
 <h1>Домашний компонент</h1>
+<p>Выводим запрос по http://localhost:8077/api/cafeterias</p>
+
+<div class="container">
+
+  <div class="card" *ngFor="let cafeteria of cafeterias">
+
+    <div><span class="completed">ID:  {{cafeteria.id}}</span></div>
+    <div><span class="completed">Название столовой:{{cafeteria.name}}</span></div>
+<!--    <div><img src="assets/9ab251.jpg" alt=""></div>-->
+<div><img src="cafeteriasPath/{{cafeteria.image}}" alt=""></div>
+  </div>
+</div>
